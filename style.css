@@ -1,0 +1,87 @@
+@font-face { font-family: Gill Sans MT; src: url(fonts/GillSansMT.woff); src: url(fonts/GillSansMT.eot); src: url(fonts/GillSansMT.svg); src: url(fonts/GillSansMT.ttf);
+}
+
+body, ul, li { margin: 0; padding: 0}
+body { font-family: "Gill Sans MT", sans-serif; }
+a { color: #ff005a; text-decoration: none}
+
+h2 { font-size: 2em; color: #ff005a; text-transform: uppercase;}
+.wrapper { height: 100%; position: relative}
+.content { width: 1180px; margin: 0 auto;}
+header { width: 100%; height: 265px; position:fixed; bottom: 0; left: 0; z-index: 1;}
+header ul { height: 117px; background: #ff005a; list-style: none; position: fixed; bottom: 0; width: 100%}
+header ul li { float: left; width: auto}
+header ul li a { font-family: "Gill Sans MT", sans-serif; font-size: 16px; display: block; text-transform:uppercase; color: #fff; line-height: 135px; text-decoration: none; padding: 0 20px; letter-spacing: 5px}
+.nav-bg { width: 532px; height: 265px; background:url(images/nav-bg.png) 100% 100%; position: absolute; right: 0;}
+
+#slide1 { padding: 215px 0; text-align: center; background:url(images/slide1.jpg) 0 0 no-repeat fixed;}
+#slide2 { padding: 50px 0; text-align: left; height: 500px;}
+#slide2 .story-maker { width: 791px; height: 791px; background: url(images/story-maker.png) 0 0 scroll; margin: 10px 0}
+#slide2 .story-maker:hover { background: url(images/story-maker2.png) 0 0 scroll; }
+#slide3 { padding: 20px 0; text-align: center; height: 550px; background: #ff005a;}
+#slide4 { background:url(images/slide2.jpg) 0 0 no-repeat fixed; background-size: cover; padding: 300px 0}
+#slide5 { padding: 100px 0 200px; text-align: center; background:url(images/slide4.jpg) 0 0 no-repeat fixed; background-size: cover}
+
+.call-now, .mail-us { text-align: center; color: #fff;}
+.mail-us { color: #ff005a}
+
+div.yeah { color: #ff005a; font-size: 8em; letter-spacing: 20px; margin-top: 0px; }
+div.yeah p { display: inline-block;}
+
+#slide1 .content { position: relative;}
+.social-bar { height: 30px; position: absolute; top: -215px; right: 0 }
+.social-bar ul, .social-bar ul li { list-style: none; margin: 0; padding: 0;}
+.social-bar ul li { width: auto; float: right; margin-left: 20px}
+.social-bar ul li a { }
+
+video { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+ background: url('../images/video02.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+#polina { 
+  background: rgba(0,0,0,0.3);
+  color: white;
+	font-family: "Gill Sans MT",sans-serif;
+	font-size: 1.2rem;
+	font-weight: 100;
+	margin: 2rem 0;
+	padding: 2rem;
+}
+
+#polina button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url('../images/video02.jpg') #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}

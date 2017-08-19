@@ -1,0 +1,13 @@
+User-Agent: Googlebot
+Disallow: /*?_*
+Disallow: /x-demo-images/*
+User-agent: Googlebot-Image
+Disallow: /x-demo-images/*
+User-agent: *
+Disallow: /*?_*
+Disallow: /x-demo-images/*
+User-agent: SiteExplorer
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+sitemap: https://www.amitanusua.github.io/sitemap.xml

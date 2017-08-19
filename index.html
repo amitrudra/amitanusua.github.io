@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Amit &amp; Anusua</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="description" content="Amit Anusua, Our Story.">
+<meta name="keywords" content="Amit Anusua, Our Story">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/settings.demo.js"></script>
+<script type="text/javascript" src="js/flipgallery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.parallax-scroll.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	var vid = document.getElementById("bgvid");
+	var pauseButton = document.querySelector("#polina button");
+	
+	function vidFade() {
+	  vid.classList.add("stopfade");
+	}
+	
+	vid.addEventListener('ended', function()
+	{
+	// only functional if "loop" is removed 
+	vid.pause();
+	// to capture IE10
+	vidFade();
+	}); 
+</script>
+</head>
+
+<body onLoad="flipGallery()">
+<div class="wrapper">
+<header>
+    <ul id="nav">
+        <li><a href="#slide1">Home</a></li>
+        <li><a href="#slide2">About</a></li>
+        <li><a href="#slide3">Gallery</a></li>
+        <li><a href="#slide4">Contect</a></li>
+    </ul>
+    <div class="nav-bg"></div>
+</header>
+
+<div id="slide1">
+	<div class="content">
+    	<div class="social-bar">
+        	<ul>
+                <li class="email"><a href="mailto:anusua.rudra@gmail.com">anusua.rudra@gmail.com</a></li>
+                <!--<li class="youtube"><a href="#">Youtube</a></li>
+            	<li class="facebook"><a href="//www.facebook.com/amitwedsanusua" target="_blank">Facebook</a></li>-->
+            </ul>
+        </div>
+    	
+		<h1><img src="images/logo.png" data-parallax='{"y": 200}' /></h1>
+    </div>
+</div>
+
+
+<div id="slide2">
+    <div class="content">
+    	<!--<iframe width="640" height="360" src="https://www.youtube.com/embed/wrHuMf06oyE" frameborder="0" allowfullscreen></iframe>
+        <div class="story-maker"></div>-->
+        
+        <video autoplay  poster="images/video02.jpg" id="bgvid" loop>
+          <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="video-bg/video02.webm" type="video/webm">
+        <source src="video-bg/video02.mp4" type="video/mp4">
+        </video>
+        <div id="polina">
+        <h2>Our Story</h2>
+        <p>Coming Soon!</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="slide3">
+    <div id="flipGallery">
+    </div>
+</div>
+
+<div id="slide4">
+	<div class="content">
+		<h2 class="call-now">Call : 9831346313</h2>
+        <!--<h3 class="mail-us">Mail : <a href="mailto:anusua.rudra@gmail.com">anusua.rudra@gmail.com</a></h3>-->
+    </div>
+</div>
+
+<div id="slide5">
+	<div class="yeah"><p data-parallax='{"z": -600}'>H</p><p data-parallax='{"z": -500}'>a</p><p data-parallax='{"z": -400}'>p</p><p data-parallax='{"z": -300}'>p</p><p data-parallax='{"z": -200}'>i</p><p data-parallax='{"z": -100}'>n</p><p data-parallax='{"z": -200}'>e</p><p data-parallax='{"z": -300}'>s</p><p data-parallax='{"z": -400}'>s</p><p data-parallax='{"rotateX": 1000}'>!</p></div>
+</div>
+
+</div>
+
+</body>
+</html>
